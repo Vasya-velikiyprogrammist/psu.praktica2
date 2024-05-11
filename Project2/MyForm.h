@@ -160,6 +160,7 @@ namespace Project2 {
 			// 
 			// button1
 			// 
+			this->button1->BackColor = System::Drawing::SystemColors::ActiveBorder;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button1->Location = System::Drawing::Point(12, 322);
@@ -167,11 +168,12 @@ namespace Project2 {
 			this->button1->Size = System::Drawing::Size(151, 39);
 			this->button1->TabIndex = 17;
 			this->button1->Text = L"Расчет";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
 			// button2
 			// 
+			this->button2->BackColor = System::Drawing::SystemColors::ActiveBorder;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button2->Location = System::Drawing::Point(218, 322);
@@ -179,13 +181,14 @@ namespace Project2 {
 			this->button2->Size = System::Drawing::Size(155, 39);
 			this->button2->TabIndex = 18;
 			this->button2->Text = L"Выход";
-			this->button2->UseVisualStyleBackColor = true;
+			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::ControlLight;
 			this->ClientSize = System::Drawing::Size(400, 373);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
